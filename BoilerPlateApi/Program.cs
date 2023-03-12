@@ -3,6 +3,7 @@ using BoilerPlateApi.Authentication;
 using BoilerPlateApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
