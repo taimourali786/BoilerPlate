@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoilerPlateApi", "BoilerPlateApi\BoilerPlateApi.csproj", "{BDE6E75B-6712-444E-82B1-54C5B8E0641C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BoilerPlateDatabase", "BoilerPlateDatabase\BoilerPlateDatabase.sqlproj", "{33B221FE-8E67-4506-AA71-E78F09D3345C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE6E75B-6712-444E-82B1-54C5B8E0641C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE6E75B-6712-444E-82B1-54C5B8E0641C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE6E75B-6712-444E-82B1-54C5B8E0641C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE6E75B-6712-444E-82B1-54C5B8E0641C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B221FE-8E67-4506-AA71-E78F09D3345C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B221FE-8E67-4506-AA71-E78F09D3345C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B221FE-8E67-4506-AA71-E78F09D3345C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{33B221FE-8E67-4506-AA71-E78F09D3345C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B221FE-8E67-4506-AA71-E78F09D3345C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B221FE-8E67-4506-AA71-E78F09D3345C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FC6A286-72F7-42EE-8DAA-F6688131260C}
+	EndGlobalSection
+EndGlobal
