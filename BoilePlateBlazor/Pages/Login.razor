@@ -1,0 +1,14 @@
+﻿@page "/Login/"
+
+@inject NavigationManager NavigationManager
+
+<PageTitle>Login</PageTitle>
+<h3>Login</h3>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine("BaseUri",NavigationManager.Uri);
+    }
+}
