@@ -65,7 +65,7 @@ namespace BoilerPlateApi.Controllers
                 var aspUser = await _userManager.FindByEmailAsync(login.Email);
                 if (aspUser == null)
                 {
-                    return StatusCode(StatusCodes.Status404NotFound, "Invalid Email");
+                    return StatusCode(StatusCodes.Status400BadRequest, "Invalid Email");
                 }
                 var result = await _signInManager.PasswordSignInAsync(aspUser, login.Password, false, false);
                 if (result.Succeeded)

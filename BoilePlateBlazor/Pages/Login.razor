@@ -1,14 +1,55 @@
-﻿@page "/Login/"
+﻿
+
+
+@page "/Login/"
+
 
 @inject NavigationManager NavigationManager
-
+@inject IAccountService AccountService
 <PageTitle>Login</PageTitle>
-<h3>Login</h3>
+<div class="main-page">
+    <div class="login-form-container">
+        <h1>@DisplayStrings.Login </h1>
+        <div class="">
+            <EditForm Model="@model" OnValidSubmit="@OnFormSubmit">
+                <DataAnnotationsValidator />
+                <div class="mb-2">
+                    <label class="display-block"> @DisplayStrings.Email</label>
+                    <InputText @bind-Value="@model.Email" @ref=userEmailInput />
+                    <ValidationMessage For="@(() => model.Email)" />
+                </div>
+                <div class="mb-2">
+                    <label class="display-block">@DisplayStrings.Password</label>
+                    <InputText @bind-Value="@model.Password" type="password" />
+                    <ValidationMessage For="@(() => model.Password)" />
+                </div>
+
+                <button type="submit">@DisplayStrings.Login</button>
+            </EditForm>
+        </div>
+    </div>
+</div>
 
 @code {
+    private InputText userEmailInput;
+    private LoginModel model = new LoginModel();
 
-    protected override void OnInitialized()
+    protected override async void OnInitialized()
     {
-        Console.WriteLine("BaseUri",NavigationManager.Uri);
+
+    }
+    protected override async void OnAfterRender(bool firstRender)
+    {
+        if(userEmailInput.Element != null)
+        {
+            await userEmailInput.Element.Value.FocusAsync();
+
+        }
+        base.OnAfterRender(firstRender);
+    }
+
+    private async void OnFormSubmit()
+    {
+        var result = AccountService.Login(model);
     }
 }

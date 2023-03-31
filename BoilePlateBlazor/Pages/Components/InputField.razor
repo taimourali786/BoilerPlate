@@ -1,0 +1,12 @@
+﻿<input type="@InputType" value="@InputValue" placeholder="@Placeholder"/>
+
+@code {
+    [Parameter]
+    public string InputType { get; set; } = "text";
+
+    [Parameter]
+    public string InputValue { get; set; }
+    [Parameter]
+    public string Placeholder { get; set; } = "";
+
+}

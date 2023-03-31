@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddCors();
 builder.Services
     .AddDbContext<BoilerPlateContext>(options => options.UseSqlServer("Data Source=localhost;Initial Catalog=boilerplate;Integrated Security=True;Encrypt=False"))
     .AddDbContext<AuthDbContext>(options => options.UseSqlServer("Data Source=localhost;Initial Catalog=boilerplate;Integrated Security=True; Encrypt=False"))
@@ -30,7 +31,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors(options => options
+.AllowAnyHeader()
+.AllowAnyMethod()
+.AllowAnyOrigin()
+);
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

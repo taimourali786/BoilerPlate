@@ -7,14 +7,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoilerPlateApi", "BoilerPla
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BoilerPlateDatabase", "BoilerPlateDatabase\BoilerPlateDatabase.sqlproj", "{33B221FE-8E67-4506-AA71-E78F09D3345C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoilePlateBlazor", "BoilePlateBlazor\BoilePlateBlazor.csproj", "{1D3DCFAC-EB7E-4488-95B8-8D715AAA69C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoilePlateBlazor", "BoilePlateBlazor\BoilePlateBlazor.csproj", "{1D3DCFAC-EB7E-4488-95B8-8D715AAA69C5}"
 	ProjectSection(ProjectDependencies) = postProject
+		{6D7592FE-81B4-4F18-9DEF-6526D3C41D84} = {6D7592FE-81B4-4F18-9DEF-6526D3C41D84}
 		{7EA0F9D1-5265-44F8-ABDC-B33E2585DAA8} = {7EA0F9D1-5265-44F8-ABDC-B33E2585DAA8}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BolerPlateUIShared", "BolerPlateUIShared\BolerPlateUIShared.csproj", "{7EA0F9D1-5265-44F8-ABDC-B33E2585DAA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BolerPlateUIShared", "BolerPlateUIShared\BolerPlateUIShared.csproj", "{7EA0F9D1-5265-44F8-ABDC-B33E2585DAA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D7592FE-81B4-4F18-9DEF-6526D3C41D84} = {6D7592FE-81B4-4F18-9DEF-6526D3C41D84}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoilerPlateViewModels", "BoilerPlateViewModels\BoilerPlateViewModels.csproj", "{6D7592FE-81B4-4F18-9DEF-6526D3C41D84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoilerPlateViewModels", "BoilerPlateViewModels\BoilerPlateViewModels.csproj", "{6D7592FE-81B4-4F18-9DEF-6526D3C41D84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
